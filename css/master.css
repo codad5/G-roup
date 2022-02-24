@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header{
+    position:fixed !important;
+    width: 100vw;
+    height: 60px;
+    display:flex !important;
+    background: rgba(58, 88, 187, 0.781);
+
+}
+main{
+    position:relative;
+}
+section{
+    width: 100vw;
+    min-height: 100px;
+    position:relative;
+
+}
+
+ .header-logo {
+     flex-basis: 30%;
+    
+ }
+
+ .header-nav{
+     flex-basis: 70%;
+     display:inline-flex;
+     
+ }
+
+ .header-nav ul{
+     flex-basis:70%;
+     height:100%;
+     display:inline-flex;
+     justify-content: space-evenly;
+     align-items: center;
+
+ }
+
+ .header-nav .sign-up{
+     flex-basis:30%;
+     height:100%;
+     display:inline-flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .header-nav li{
+     display:inline-block;
+ }
+
+ .header-nav a{
+     color: rgb(247, 247, 247);
+     text-decoration: none;
+     font-weight:500;
+ }
+
+.header-nav .nav-home {
+     color: rgb(247, 206, 152);
+     font-weight:500;
+ }
+
+ .header-nav .sign-up a{
+    display: inline-block;
+    width: 65%;
+    background-color:rgb(192, 125, 37);
+    border-radius: 20px;
+    text-align: center;
+    max-width: 140px;
+    padding:6px 10px;
+    border:none;
+
+ }
