@@ -22,7 +22,7 @@
             <div class="form-panel">
                 <div class="form-box" id="form_login_box">
 
-                    <form action="">
+                    <form action="inc/login.inc.php" method="post">
                         <div class="input_item">
 
                             <label for="username">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="input_item">
 
-                            <button type="submit">LOGIN</button>
+                            <button type="submit" name="submit">LOGIN</button>
                         </div>
                         <div class="input_item">
 

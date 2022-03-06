@@ -19,8 +19,9 @@
    $otp = get_otp();
    $newUser = new NewUser($username, $email, $password, $otp);
    $signUp = new NewObject($newUser);
+   $createUser = $signUp->Create($newUser);
    
-   if($signUp->Create($newUser) === true){
+   if($createUser === true){
        echo "Done";
        session_start();
        $_SESSION['username'] = $username;
@@ -28,6 +29,7 @@
        header('location:../');
 
    }else{
-       var_dump($signUp->Create($newUser));
+       var_dump($createUser);
+       echo 'div class="alert alert-"';
    }
 

@@ -5,6 +5,7 @@
         protected $email;
         protected $otp;
         public function __construct($name, $email, $password, $otp){
+            new Dbh;
             $this->name = $name;
             $this->password = password_hash($password, true);
             $this->email = $email;

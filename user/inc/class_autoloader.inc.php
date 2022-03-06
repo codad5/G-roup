@@ -6,7 +6,7 @@
             $path = "../classes/";
         }
         else{
-            $path = "classes";
+            $path = "classes/";
 
         }
         $extension = ".class.php";
