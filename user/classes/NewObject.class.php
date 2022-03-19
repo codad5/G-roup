@@ -23,7 +23,7 @@
                 
             }
             catch (Exception $e){
-                return [$e->getMessage(), false];
+                return ['message' => $e->getMessage(), false];
             }
             
 

@@ -18,9 +18,25 @@
         }
         session_unset();
         session_destroy();
-        header("location: login.php?error=logout");
+        $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+        if(strpos($url, 'inc') !== false){
+            header("location: login.php?error=logout");
+
+        }
+        
         exit;
 
         
     }
-?>
+    function apiExit($api){
+        if(isset($api['datasent']['password'])){
+            $api['datasent']['password'] = md5($api['datasent']['password']);
+            // for($i = 0; $i < strlen($api['datasent']['password']); $i++){
+                
+            //     $api['datasent']['password'] = $api['datasent']['password']."*";
+            }
+        
+        echo json_encode($api);
+        exit;
+    }

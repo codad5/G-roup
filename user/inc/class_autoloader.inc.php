@@ -5,6 +5,10 @@
         if(strpos($url, 'inc') !== false){
             $path = "../classes/";
         }
+        elseif(strpos($url, 'api') !== false){
+            $path = "../classes/";
+
+        }
         else{
             $path = "classes/";
 
